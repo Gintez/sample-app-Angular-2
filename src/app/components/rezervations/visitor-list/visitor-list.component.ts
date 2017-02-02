@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { DataService } from '../../../services/data.service';
 
 @Component({
-  selector: 'app-rezervations-list',
-  templateUrl: './rezervations-list.component.html',
-  styleUrls: ['./rezervations-list.component.css']
+  selector: 'app-visitor-list',
+  templateUrl: './visitor-list.component.html',
+  styleUrls: ['./visitor-list.component.css']
 })
-export class RezervationsListComponent {
+export class VisitorListComponent {
+
   constructor (private dataService: DataService) {};
 
   rezervations = this.dataService.getRezervationData();

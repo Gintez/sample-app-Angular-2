@@ -5,26 +5,25 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { VisitorsComponent } from './components/visitors/visitors.component';
-import { VisitorListComponent } from './components/visitors/visitor-list/visitor-list.component';
 import { RezervationsComponent } from './components/rezervations/rezervations.component';
 import { RezervationsListComponent } from './components/rezervations/rezervations-list/rezervations-list.component';
+import { VisitorListComponent } from './components/rezervations/visitor-list/visitor-list.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    VisitorsComponent,
-    VisitorListComponent,
     RezervationsComponent,
-    RezervationsListComponent
+    RezervationsListComponent,
+    VisitorListComponent
   ],
   imports: [
     BrowserModule,
     // FormsModule,
     // HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

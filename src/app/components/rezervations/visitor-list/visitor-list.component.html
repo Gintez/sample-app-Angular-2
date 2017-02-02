@@ -2,7 +2,7 @@
   <thead>
     <tr>
       <th>BERTH</th>
-      <th>BEAT</th>
+      <th>BOAT</th>
       <th>HARBOR</th>
       <th>CAPTAIN</th>
       <th>DEPARTURE</th>
@@ -10,13 +10,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let visitor of visitors">
-      <td>{{visitor.berth}}</td>
-      <td>{{visitor.boat}}</td>
-      <td>{{visitor.harbor}}</td>
-      <td>{{visitor.captain}}</td>
-      <td>{{visitor.departure}}</td>
+    <tr *ngFor="let rezervation of rezervations">
+      <td>{{rezervation.bridge}}</td>
+      <td>{{rezervation.boat}}</td>
+      <td>{{rezervation.harbor}}</td>
+      <td>{{rezervation.captain}}</td>
+      <td>{{rezervation.departure}}</td>
       <td><button class="button"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
     </tr>
   </tbody>
 </table>
+
+
