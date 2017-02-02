@@ -1,0 +1,9 @@
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}

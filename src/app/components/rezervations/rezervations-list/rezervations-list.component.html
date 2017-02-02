@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>STATUS</th>
+      <th>ARRIVAL</th>
+      <th>DEPARTURE</th>
+      <th>SIZE</th>
+      <th>PRICE</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rezervation of rezervations">
+      <td>{{rezervation.status}}</td>
+      <td>{{rezervation.arrival}}</td>
+      <td>{{rezervation.departure}}</td>
+      <td>{{rezervation.size}}</td>
+      <td>{{rezervation.price}}</td>
+      <td><button class="button"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+    </tr>
+  </tbody>
+</table>

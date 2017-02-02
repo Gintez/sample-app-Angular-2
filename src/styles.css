@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  color: #797D7F;
+}
+
+.button {
+  font-size: 14px;
+  border: 1px solid #CACFD2;
+  border-radius: 6px;
+  background-color: white;
+  color: #797D7F;
+  padding: 5px 10px;
+}
+
