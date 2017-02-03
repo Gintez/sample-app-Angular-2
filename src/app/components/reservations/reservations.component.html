@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-lg-6">
+      <article>
+        <div class="header-wrapper">
+          <h1>Current <strong>Visitors</strong></h1>
+          <button class="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button class="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+        <app-visitor-list (openModal)="modal.show()"  (modalInfo)="reservationObj = $event" [reservations]="reservations"></app-visitor-list>
+      </article>
+    </div>
+
+    <div class="col-xs-12 col-md-12 col-lg-6">
+      <article>
+        <div class="header-wrapper">
+          <h1>Reservations</h1>
+          <button class="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button class="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+        <app-reservations-list (openModal)="modal.show()" (modalInfo)="reservationObj = $event" [reservations]="reservations"></app-reservations-list>
+      </article>
+    </div>
+  </div>
+</div>
+
+<app-modal>
+  <div class="app-modal-header">
+    Booking Details
+  </div>
+  <div class="app-modal-body">
+    <form class="form-group">
+      <div class="row">
+        <div class="col">
+          <label>Arrival</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+            <input type="text" class="form-control" placeholder="{{reservationObj?.arrival}}" disabled>
+          </div>
+          <label>Bridge</label>
+          <input type="text" class="form-control" placeholder="{{reservationObj?.bridge}}" disabled>
+          <label>Harbor</label>
+          <input type="text" class="form-control" placeholder="{{reservationObj?.harbor}}" disabled>
+        </div>
+        <div class="col">
+          <label>Departure</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+            <input type="text" class="form-control" placeholder="{{reservationObj?.departure}}" disabled>
+          </div>
+          <label>Position</label>
+            <input type="text" class="form-control" placeholder="{{reservationObj?.position}}" disabled>
+          <label>Price</label>
+            <div class="input-group">
+              <div class="input-group-addon">{{reservationObj?.currency}}</div>
+            <input type="text" class="form-control" placeholder="{{reservationObj?.price}}" disabled>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <hr>
+  <div class="app-modal-footer">
+    <button type="button" class="button" (click)="modal.hide()">Close</button>
+  </div>
+</app-modal>
+
+
+
+

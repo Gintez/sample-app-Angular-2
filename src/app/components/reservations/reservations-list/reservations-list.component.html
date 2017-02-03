@@ -1,0 +1,28 @@
+<div class="table-responsive">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>STATUS</th>
+      <th>ARRIVAL</th>
+      <th>DEPARTURE</th>
+      <th>SIZE</th>
+      <th>PRICE</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let reservation of reservations">
+      <td >
+        <div [ngClass]="{'status': true, 'pending': isPending(reservation.status), 'manual' : isManual(reservation.status)}">
+          {{reservation.status}}
+        </div>
+      </td>
+      <td>{{reservation.arrival}}</td>
+      <td>{{reservation.departure}}</td>
+      <td>{{reservation.size}}</td>
+      <td>{{reservation.currency}} {{reservation.price}}</td>
+      <td><button (click)="clicked(reservation)" class="button"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

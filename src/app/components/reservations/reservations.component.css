@@ -1,0 +1,21 @@
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}
+
+.app-modal-header {
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}

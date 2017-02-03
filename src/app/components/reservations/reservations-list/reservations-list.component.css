@@ -1,0 +1,18 @@
+.status {
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pending {
+  background-color: #F4D03F;
+}
+
+.manual {
+  background-color: #616A6B;
+}
+
+
