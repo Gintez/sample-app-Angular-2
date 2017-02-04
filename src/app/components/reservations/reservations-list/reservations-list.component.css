@@ -15,4 +15,23 @@
   background-color: #616A6B;
 }
 
+.button-wrapper {
+  float: right;
+  white-space: nowrap;
+}
+
+.button-check {
+  background-color: #229954;
+  color: white;
+  border: 0px;
+}
+
+.button-delete {
+  background-color: #E74C3C;
+  color: white;
+  border: 0px;
+}
+
+
+
 

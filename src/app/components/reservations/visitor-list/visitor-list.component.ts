@@ -2,8 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-visitor-list',
-  templateUrl: './visitor-list.component.html',
-  styleUrls: ['./visitor-list.component.css']
+  templateUrl: './visitor-list.component.html'
 })
 export class VisitorListComponent {
 

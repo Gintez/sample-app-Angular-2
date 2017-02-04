@@ -3,7 +3,7 @@ import { Component} from '@angular/core';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  styles: [`.modal-dialog {top: 200px;}`]
 })
 export class ModalComponent {
   public visible = false;

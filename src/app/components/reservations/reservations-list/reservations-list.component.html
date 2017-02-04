@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let reservation of reservations">
-      <td >
+      <td>
         <div [ngClass]="{'status': true, 'pending': isPending(reservation.status), 'manual' : isManual(reservation.status)}">
           {{reservation.status}}
         </div>
@@ -21,7 +21,19 @@
       <td>{{reservation.departure}}</td>
       <td>{{reservation.size}}</td>
       <td>{{reservation.currency}} {{reservation.price}}</td>
-      <td><button (click)="clicked(reservation)" class="button"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+      <td>
+        <div class="button-wrapper">
+        <button *ngIf="isPending(reservation.status)" class="button button-check">
+          <i class="fa fa-check" aria-hidden="true"></i>
+        </button>
+        <button *ngIf="isPending(reservation.status)" class="button button-delete">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <button (click)="clicked(reservation)" class="button">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>

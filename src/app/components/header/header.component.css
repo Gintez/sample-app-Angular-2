@@ -1,4 +1,4 @@
-.main-header {
+.main-header-wrapper {
   margin-top: 50px;
   margin-bottom: 20px;
   display: flex;
@@ -26,5 +26,5 @@ i {
 
 .button-header {
   padding: 5px 20px;
-  width: 200px;
+  width: 150px;
 }

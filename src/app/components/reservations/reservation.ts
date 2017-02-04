@@ -10,6 +10,6 @@ export class Reservation {
     public position,
     public boat,
     public harbor,
-    public captain,
+    public captain
   ) {}
 }
